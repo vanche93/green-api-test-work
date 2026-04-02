@@ -1,4 +1,4 @@
-const apiUrl = "https://api.green-api.com/";
+const apiUrl = "api/";
 
 const textarea = document.getElementById("returnTextarea");
 const getSettingsBtn = document.getElementById("getSettingsBtn");
