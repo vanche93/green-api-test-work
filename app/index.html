@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GREEN-API</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+</head>
+
+<body>
+<div class="container mt-5">
+    <div class="row gx-5">
+        <div class="col-md-4">
+            <form>
+                <div class="mb-3 form-floating">
+                    <input placeholder="idInstance" class="form-control" id="idInstance"/>
+                     <label for="floatingInput">idInstance</label>
+                </div>
+                <div class="mb-5 form-floating">
+                    <input placeholder="apiTokenInstance" class="form-control" id="apiTokenInstance"/>
+                    <label for="floatingInput">apiTokenInstance</label>
+                </div>
+                <div class="d-grid gap-5 mb-5">
+                    <button type="button" class="btn btn-primary" id="getSettingsBtn">getSettings</button>
+                    <button type="button" class="btn btn-primary" id="getStateInstanceBtn">getStateInstance</button>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input placeholder="chatId" class="form-control" id="messageChatId"/>
+                    <label for="floatingInput">chatId</label>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input placeholder="message" class="form-control" id="message"/>
+                    <label for="floatingInput">message</label>
+                </div>
+                <div class="d-grid gap-2 mb-5">
+                    <button type="button" class="btn btn-primary" id="sendMessageBtn">sendMessage</button>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input placeholder="chatId" class="form-control" id="fileChatId"/>
+                    <label for="floatingInput">chatId</label>
+                </div>
+                <div class="mb-3 form-floating">
+                    <input placeholder="urlFile" class="form-control" id="urlFile"/>
+                    <label for="floatingInput">urlFile</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary" id="sendFileBtn">sendFileByUrl</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <label for="returnTextarea" class="form-label">Ответ:</label>
+            <textarea class="form-control h-100" id="returnTextarea" disabled readonly></textarea>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
